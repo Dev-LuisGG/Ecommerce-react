@@ -180,7 +180,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="./img/slider-img.png" alt="sliderimg"></img>
+            <img src={sliderImg} alt="sliderimg"></img>
           </div>
         </div>
       </div>

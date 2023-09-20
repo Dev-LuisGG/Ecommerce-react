@@ -10,6 +10,14 @@ import { BsEye } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import Homeproduct from "../js/homeproduct";
 import "../assets/css/home.css";
+
+// Importaciones de imagines
+import headphoneImg from '../assets/img/headphone.png';
+import mobilephoneImg from '../assets/img/MobilePhone.png';
+import smartwatchImg from '../assets/img/smartwatch.png';
+import cpuImg from '../assets/img/cpuheat.jpg';
+import sliderImg from '../assets/img/slider-img.png';
+
 const Home = ({ detail, view, close, setClose, addtocart }) => {
   return (
     <>
@@ -19,20 +27,20 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
             <button onClick={() => setClose(false)} className="closebtn">
               <AiOutlineCloseCircle />
             </button>
-            {detail.map((curElm) => {
+            {detail.map((product) => {
               return (
                 <div className="productbox">
                   <div className="img-box">
-                    <img src={curElm.Img} alt={curElm.Title}></img>
+                    <img src={product.Img} alt={product.Title}></img>
                   </div>
                   <div className="detail">
-                    <h4>{curElm.Cat}</h4>
-                    <h2>{curElm.Title}</h2>
+                    <h4>{product.Cat}</h4>
+                    <h2>{product.Title}</h2>
                     <p>
                       A Screen Everyone Will Love: Whether your family is
                       streaming or video chatting with friends tablet A8...{" "}
                     </p>
-                    <h3>{curElm.Price}</h3>
+                    <h3>{product.Price}</h3>
                     <button>Add To Cart</button>
                   </div>
                 </div>
@@ -51,7 +59,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
             </Link>
           </div>
           <div className="img_box">
-            <img src="./img/slider-img.png" alt="sliderimg"></img>
+            <img src={sliderImg} alt="sliderimg"></img>
           </div>
         </div>
       </div>
@@ -59,7 +67,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
         <div className="container">
           <div className="box">
             <div className="img_box">
-              <img src="./img/Mobile Phone.png" alt="mobile"></img>
+              <img src={mobilephoneImg} alt="mobile"></img>
             </div>
             <div className="detail">
               <p>23 products</p>
@@ -67,7 +75,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="./img/smart watch.png" alt="watch"></img>
+              <img src={smartwatchImg} alt="watch"></img>
             </div>
             <div className="detail">
               <p>18 products</p>
@@ -75,7 +83,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="./img/headphone.png" alt="headphone"></img>
+              <img src={headphoneImg} alt="headphone"></img>
             </div>
             <div className="detail">
               <p>52 products</p>
@@ -83,7 +91,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
           </div>
           <div className="box">
             <div className="img_box">
-              <img src="./img/cpu heat.jpg" alt="cpu "></img>
+              <img src={cpuImg} alt="cpu "></img>
             </div>
             <div className="detail">
               <p>63 products</p>
@@ -134,16 +142,16 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
       <div className="product">
         <h2>Top Products</h2>
         <div className="container">
-          {Homeproduct.map((curElm) => {
+          {Homeproduct.map((product) => {
             return (
-              <div className="box" key={curElm.id}>
+              <div className="box" key={product.id}>
                 <div className="img_box">
-                  <img src={curElm.Img} alt={curElm.Title}></img>
+                  <img src={product.Img} alt={product.Title}></img>
                   <div className="icon">
-                    <li onClick={() => addtocart(curElm)}>
+                    <li onClick={() => addtocart(product)}>
                       <AiOutlineShoppingCart />
                     </li>
-                    <li onClick={() => view(curElm)}>
+                    <li onClick={() => view(product)}>
                       <BsEye />
                     </li>
                     <li>
@@ -152,9 +160,9 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
                   </div>
                 </div>
                 <div className="detail">
-                  <p>{curElm.Cat}</p>
-                  <h3>{curElm.Title}</h3>
-                  <h4>${curElm.Price}</h4>
+                  <p>{product.Cat}</p>
+                  <h3>{product.Title}</h3>
+                  <h4>${product.Price}</h4>
                 </div>
               </div>
             );

@@ -10,9 +10,9 @@ const Cart = ({cart, setCart}) => {
         {
             return x.id === product.id
         })
-        setCart(cart.map((curElm) => 
+        setCart(cart.map((product) => 
         {
-            return curElm.id === product.id ? {...exsit, qty: exsit.qty + 1} : curElm
+            return product.id === product.id ? {...exsit, qty: exsit.qty + 1} : product
         }))
     }
 
@@ -23,9 +23,9 @@ const Cart = ({cart, setCart}) => {
         {
             return x.id === product.id
         })
-        setCart(cart.map((curElm) => 
+        setCart(cart.map((product) => 
         {
-            return curElm.id === product.id ? {...exsit, qty: exsit.qty - 1} : curElm
+            return product.id === product.id ? {...exsit, qty: exsit.qty - 1} : product
         }))
     }
     //Remove cart product
@@ -56,27 +56,27 @@ const Cart = ({cart, setCart}) => {
         }
         <div className='contant'>
             {
-                cart.map((curElm) => 
+                cart.map((product) => 
                 {
                     return(
-                        <div className='cart_item' key={curElm.id}>
+                        <div className='cart_item' key={product.id}>
                             <div className='img_box'>
-                                <img src={curElm.Img} alt={curElm.Title}></img>
+                                <img src={product.Img} alt={product.Title}></img>
                             </div>
                             <div className='detail'>
                                 <div className='info'>
-                                <h4>{curElm.Cat}</h4>
-                                <h3>{curElm.Title}</h3>
-                                <p>Price: ${curElm.Price}</p>
+                                <h4>{product.Cat}</h4>
+                                <h3>{product.Title}</h3>
+                                <p>Price: ${product.Price}</p>
                                 <div className='qty'>
-                                    <button className='incqty' onClick={() => incqty(curElm)}>+</button>
-                                    <input type='text' value={curElm.qty}></input>
-                                    <button className='decqty' onClick={() => decqty(curElm)}>-</button>
+                                    <button className='incqty' onClick={() => incqty(product)}>+</button>
+                                    <input type='text' value={product.qty}></input>
+                                    <button className='decqty' onClick={() => decqty(product)}>-</button>
                                 </div>
-                                <h4 className='subtotal'>sub total: ${curElm.Price * curElm.qty}</h4>
+                                <h4 className='subtotal'>sub total: ${product.Price * product.qty}</h4>
                                 </div>
                                 <div className='close'>
-                                <button onClick={() => removeproduct(curElm)}><AiOutlineClose /></button>
+                                <button onClick={() => removeproduct(product)}><AiOutlineClose /></button>
                                 </div>
                             </div>
                         </div>

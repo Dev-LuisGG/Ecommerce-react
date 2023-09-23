@@ -53,9 +53,9 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
       <div className="top_banner">
         <div className="container">
           <div className="detail">
-            <h2>The Best Note Book Colletion 2023</h2>
+            <h2>La mejor colección de NoteBooks 2023</h2>
             <Link to="/product" className="link">
-              Shop Now <BsArrowRight />
+              Comprar Ahora <BsArrowRight />
             </Link>
           </div>
           <div className="img_box">
@@ -70,7 +70,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <img src={mobilephoneImg} alt="mobile"></img>
             </div>
             <div className="detail">
-              <p>23 products</p>
+              <p>23 productos</p>
             </div>
           </div>
           <div className="box">
@@ -78,7 +78,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <img src={smartwatchImg} alt="watch"></img>
             </div>
             <div className="detail">
-              <p>18 products</p>
+              <p>18 productos</p>
             </div>
           </div>
           <div className="box">
@@ -86,7 +86,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <img src={headphoneImg} alt="headphone"></img>
             </div>
             <div className="detail">
-              <p>52 products</p>
+              <p>52 productos</p>
             </div>
           </div>
           <div className="box">
@@ -94,7 +94,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <img src={cpuImg} alt="cpu "></img>
             </div>
             <div className="detail">
-              <p>63 products</p>
+              <p>63 productos</p>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <FiTruck />
             </div>
             <div className="detail">
-              <h3>Free Shipping</h3>
+              <h3>Envío Gratis</h3>
               <p>Oder above $1000</p>
             </div>
           </div>
@@ -115,8 +115,8 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <BsCurrencyDollar />
             </div>
             <div className="detail">
-              <h3>Return & Refund</h3>
-              <p>Money Back Gaurenty</p>
+              <h3>Devolución y Reembolso</h3>
+              <p>Garantía de devolución de dinero</p>
             </div>
           </div>
           <div className="box">
@@ -124,8 +124,8 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
               <CiPercent />
             </div>
             <div className="detail">
-              <h3>Member Discount</h3>
-              <p>On every Oder</p>
+              <h3>Descuento para miembros</h3>
+              <p>En cada pedido</p>
             </div>
           </div>
           <div className="box">
@@ -140,7 +140,7 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
         </div>
       </div>
       <div className="product">
-        <h2>Top Products</h2>
+        <h2>Productos destacados</h2>
         <div className="container">
           {Homeproduct.map((product) => {
             return (
@@ -172,11 +172,11 @@ const Home = ({ detail, view, close, setClose, addtocart }) => {
       <div className="banner">
         <div className="container">
           <div className="detail">
-            <h4>LATEST TECHNOLOGY ADDED</h4>
+            <h4>ÚLTIMA TEGNOLOGÍA AGREGADA</h4>
             <h3>Apple iPad 10.2 9th Gen - 2021</h3>
             <p>$ 986</p>
             <Link to="/product" className="link">
-              Shop Now <BsArrowRight />
+              Comprar Ahora <BsArrowRight />
             </Link>
           </div>
           <div className="img_box">

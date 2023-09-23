@@ -50,8 +50,8 @@ const Cart = ({cart, setCart}) => {
     <div className='cartcontainer'>
         {cart.length === 0 && 
         <div className='emptycart'>
-        <h2 className='empty'>Cart is Empty</h2>
-        <Link to='/product' className='emptycartbtn'>Shop Now</Link>
+        <h2 className='empty'>El CARRITO ESTÁ VACÍO</h2>
+        <Link to='/product' className='emptycartbtn'>Comprar Ahora</Link>
         </div>
         }
         <div className='contant'>
@@ -88,7 +88,7 @@ const Cart = ({cart, setCart}) => {
             cart.length > 0 &&
             <>
             <h2 className='totalprice'>total: $ {Totalprice}</h2>
-            <button className='checkout'>Checkout</button>
+            <button className='checkout'>Finalizar Compra</button>
             </>
         }
     </div>

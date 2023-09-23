@@ -43,17 +43,17 @@ const Contact = () => {
     <>
     <div className='contact_container'>
         <div className='contant'>
-            <h2># contact us</h2>
+            <h2># Contáctenos</h2>
             <div className='form'>
                 <form method='POST'>
-                    <input type='text' name='Name' value={users.Name} placeholder='Enter Your Full Name' required autoComplete='off' onChange={data}></input>
-                    <input type='email' name='Email' value={users.Email} placeholder='Enter Your E-mail'  autoComplete='off' onChange={data}></input>
-                    <input type='text' name='Subject' value={users.Subject} placeholder='Enter Your Subject'  autoComplete='off' onChange={data}></input>
-                    <textarea name='Message' value={users.Message} placeholder='Your Message'  autoComplete='off' onChange={data}></textarea>
+                    <input type='text' name='Name' value={users.Name} placeholder='Ingrese su nombre completo' required autoComplete='off' onChange={data}></input>
+                    <input type='email' name='Email' value={users.Email} placeholder='Ingrese su correo electrónico'  autoComplete='off' onChange={data}></input>
+                    <input type='text' name='Subject' value={users.Subject} placeholder='Ingrese el asunto'  autoComplete='off' onChange={data}></input>
+                    <textarea name='Message' value={users.Message} placeholder='Su mensaje'  autoComplete='off' onChange={data}></textarea>
                     {
                         isAuthenticated ? 
                         <button type='submit' onClick={senddata}>send</button>
-                        : <button type='submit' onClick={() => loginWithRedirect()}>Login to Send</button>
+                        : <button type='submit' onClick={() => loginWithRedirect()}>Iniciar sesión para enviar</button>
                     }
                 </form>
             </div>

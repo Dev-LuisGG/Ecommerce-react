@@ -14,7 +14,7 @@ const Footer = () => {
                     <img src='./img/logo.svg' alt='logo'></img>
                 </div>
                 <div className='detail'>
-                    <p>We are a team of designers and developers that create high quality WordPress</p>
+                    <p>Somos un equipo de diseñandores y desarolladores bien vergudos que creamos WordPress de alta calidad</p>
                     <div className='icon'>
                         <li><RiFacebookFill /></li>
                         <li><AiOutlineInstagram /></li>
@@ -24,22 +24,22 @@ const Footer = () => {
                 </div>
             </div>
             <div className='account'>
-                <h3>My Account</h3>
+                <h3>Mi Cuenta</h3>
                 <ul>
-                    <li>Account</li>
-                    <li>Order</li>
-                    <li>Cart</li>
-                    <li>shipping</li>
-                    <li>return</li>
+                    <li>Cuenta</li>
+                    <li>Pedido</li>
+                    <li>Carrito</li>
+                    <li>Envío</li>
+                    <li>Devolución</li>
                 </ul>
             </div>
             <div className='page'>
-                <h3>Pages</h3>
+                <h3>Páginas</h3>
                 <ul>
-                    <li>Home</li>
+                    <li>Inicio</li>
                     <li>About</li>
-                    <li>Contact</li>
-                    <li>Terma & Condition</li>
+                    <li>Contacto</li>
+                    <li>Términos y condiciones</li>
                 </ul>
             </div>
         </div>

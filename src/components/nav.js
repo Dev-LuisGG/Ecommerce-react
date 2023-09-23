@@ -17,7 +17,7 @@ const Nav = ({ searchbtn }) => {
         <div className="icon">
           <FaTruckMoving />
         </div>
-        <p>FREE Shipping when shopping upto $1000</p>
+        <p>Envío GRATIS al comprar hasta $1000 </p>
       </div>
       <div className="main_header">
         <div className="container">
@@ -28,11 +28,11 @@ const Nav = ({ searchbtn }) => {
             <input
               type="text"
               value={search}
-              placeholder="Search Your Product..."
+              placeholder="Busca Tu Producto..."
               autoComplete="off"
               onChange={(e) => setSearch(e.target.value)}
             ></input>
-            <button onClick={() => searchbtn(search)}>Search</button>
+            <button onClick={() => searchbtn(search)}>Buscar</button>
           </div>
           <div className="icon">
             {isAuthenticated && (
@@ -60,12 +60,12 @@ const Nav = ({ searchbtn }) => {
             <ul>
               <li>
                 <Link to="/" className="link">
-                  Home
+                  Inicio
                 </Link>
               </li>
               <li>
                 <Link to="/product" className="link">
-                  Product
+                  Producto
                 </Link>
               </li>
               <li>
@@ -75,7 +75,7 @@ const Nav = ({ searchbtn }) => {
               </li>
               <li>
                 <Link to="/contact" className="link">
-                  contact
+                  contacto
                 </Link>
               </li>
             </ul>

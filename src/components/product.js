@@ -46,7 +46,7 @@ const Product = ({
                       streaming or video chatting with friends tablet A8...{" "}
                     </p>
                     <h3>{product.Price}</h3>
-                    <button>Add To Cart</button>
+                    <button>Añadir Al Carrito</button>
                   </div>
                 </div>
               );
@@ -56,20 +56,20 @@ const Product = ({
         </div>
       ) : null}
       <div className="products">
-        <h2># Products</h2>
-        <p>Home . products</p>
+        <h2># Productos</h2>
+        <p>Inicio . productos</p>
         <div className="container">
           <div className="filter">
             <div className="categories">
-              <h3>categories</h3>
+              <h3>Categorias</h3>
               <ul>
-                <li onClick={() => AllProducts()}>All Products</li>
+                <li onClick={() => AllProducts()}>Todos los Productos</li>
                 <li onClick={() => filtterproduct("Tablet")}>Tablet</li>
                 <li onClick={() => filtterproduct("Smart Watch")}>
                   Smart Watch
                 </li>
                 <li onClick={() => filtterproduct("Headphone")}>Headphone</li>
-                <li onClick={() => filtterproduct("Camera")}>Camera</li>
+                <li onClick={() => filtterproduct("Camera")}>Cámara</li>
                 <li onClick={() => filtterproduct("Gaming")}>Gaming</li>
               </ul>
             </div>

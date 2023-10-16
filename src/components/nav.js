@@ -63,21 +63,21 @@ const Nav = ({ searchbtn }) => {
                   Inicio
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/product" className="link">
                   Producto
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/about" className="link">
                   About
                 </Link>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <Link to="/contact" className="link">
                   contacto
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="auth">
